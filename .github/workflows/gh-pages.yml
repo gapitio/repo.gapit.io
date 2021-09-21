@@ -15,8 +15,10 @@ jobs:
           pnpm install
           pnpm run build
 
-      - name: Add CNAME
-        run: echo 'repos.gapit.io' > dist/CNAME
+      - name: Add CNAME and .nojekyll
+        run: |
+          echo 'repos.gapit.io' > dist/CNAME
+          echo '' > dist/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
