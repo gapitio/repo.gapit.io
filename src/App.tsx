@@ -1,14 +1,18 @@
 import type { Component } from "solid-js";
 
-import logo from "./logo.svg";
 import styles from "./App.module.css";
+import { Navbar } from "./Components/Navbar";
+import { RepoList } from "./Components/RepoList";
 
-const App: Component = () => {
+export const App: Component = () => {
   return (
     <div class={styles.App}>
-      <header class={styles.header}>Repos</header>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <RepoList />
+      </main>
     </div>
   );
 };
-
-export default App;

@@ -1,0 +1,19 @@
+.list-item {
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.image {
+  height: 40px;
+  margin-right: 0.3rem;
+}

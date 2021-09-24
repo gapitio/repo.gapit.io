@@ -4,14 +4,15 @@
   "description": "",
   "scripts": {
     "start": "vite",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview --host"
   },
   "license": "MIT",
   "devDependencies": {
     "vite": "^2.5.1",
-    "vite-plugin-solid": "^2.0.3"
+    "vite-plugin-solid": "^2.0.3",
+    "vite-tsconfig-paths": "^3.3.14"
   },
   "dependencies": {
     "solid-js": "^1.1.1"

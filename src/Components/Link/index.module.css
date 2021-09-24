@@ -1,0 +1,41 @@
+.link {
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  color: var(--text-color);
+  display: flex;
+}
+.link:hover {
+  color: #33a2e5;
+  text-decoration: underline;
+}
+
+.label {
+  margin-right: 0.3rem;
+}
+
+.icon-wrapper {
+  top: 1px;
+  position: relative;
+  width: 13.5px;
+}
+
+.navbar.link {
+  font-weight: 500;
+}
+.navbar.link:hover {
+  text-decoration: none;
+}
+
+.repo-list.link {
+  font-weight: 500;
+  font-size: 26px;
+  color: #33a2e5;
+}
+
+.repo-list .icon-wrapper {
+  width: 20px;
+}
+
+.repo-list .label {
+  margin-right: 0.5rem;
+}

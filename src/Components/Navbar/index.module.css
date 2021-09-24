@@ -1,0 +1,35 @@
+.navbar {
+  background-color: var(--navbar-background-color);
+  position: sticky;
+  top: 0;
+  height: 3.75rem;
+  box-shadow: 0 1px 2px 0 #0001;
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.navbar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-items,
+.navbar-items-right {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.navbar-items-right {
+  flex: 0 0 auto;
+  justify-content: flex-end;
+}
+
+.icon-wrapper {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+}
