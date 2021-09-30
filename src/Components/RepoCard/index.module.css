@@ -23,6 +23,7 @@
 
 .links-container {
   margin-top: 12px;
+  text-transform: capitalize;
 }
 
 .links-container > :not(:last-child) {
