@@ -1,0 +1,30 @@
+.card {
+  padding: 20px;
+  box-shadow: 0px 0px 2px 1px #33a2e550;
+  background-color: #33a2e503;
+}
+
+.list-item {
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.icon {
+  height: 40px;
+  margin-right: 0.3rem;
+}
+
+.links-container {
+  margin-top: 12px;
+}
+
+.links-container > :not(:last-child) {
+  margin-right: 14px;
+}

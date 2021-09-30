@@ -1,0 +1,20 @@
+.link {
+  text-decoration: none;
+  color: #33a2e5;
+  display: inline-flex;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.label {
+  margin-right: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrapper {
+  top: 1px;
+  position: relative;
+  width: 13.5px;
+}

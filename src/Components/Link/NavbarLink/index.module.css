@@ -1,0 +1,23 @@
+.link {
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+  color: var(--text-color);
+  display: flex;
+  font-weight: 500;
+}
+.link:hover {
+  color: #33a2e5;
+  text-decoration: none;
+}
+
+.label {
+  margin-right: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrapper {
+  top: 1px;
+  position: relative;
+  width: 13.5px;
+}
