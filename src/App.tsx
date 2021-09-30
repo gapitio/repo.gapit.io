@@ -2,16 +2,14 @@ import type { Component } from "solid-js";
 
 import styles from "./App.module.css";
 import { Navbar } from "./Components/Navbar";
-import { RepoList } from "./Components/RepoList";
+import { ReposGrid } from "./Components/ReposGrid";
 
 export const App: Component = () => {
   return (
     <div class={styles.App}>
-      <header>
-        <Navbar />
-      </header>
+      <Navbar />
       <main>
-        <RepoList />
+        <ReposGrid />
       </main>
     </div>
   );

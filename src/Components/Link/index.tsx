@@ -1,35 +1,21 @@
-import { Component } from "solid-js";
+import { Component, JSX, Show } from "solid-js";
 import { ExternalLinkIcon } from "../Icons/ExternalLinkIcon";
 import style from "./index.module.css";
+import { NavbarLink } from "./NavbarLink";
 
 export const Link: Component<{
-  label: string;
+  children: JSX.Element;
   href: string;
-  type?: "default" | "navbar" | "repoList";
-}> = ({ label, href, type = "default" }) => (
-  <a
-    class={style.link}
-    classList={{
-      [style.navbar]: type === "navbar",
-      [style["repo-list"]]: type === "repoList",
-    }}
-    href={href}
-    rel="noopener noreferrer"
-    target="_blank"
-  >
-    <span class={style.label}>{label}</span>
-    <span class={style["icon-wrapper"]}>
-      <ExternalLinkIcon />
-    </span>
+  linkIcon?: boolean;
+}> = ({ children, href, linkIcon = true }) => (
+  <a class={style.link} href={href} rel="noopener noreferrer" target="_blank">
+    <span class={style.label}>{children}</span>
+    <Show when={linkIcon}>
+      <span class={style["icon-wrapper"]}>
+        <ExternalLinkIcon />
+      </span>
+    </Show>
   </a>
 );
 
-export const NavbarLink: Component<{
-  label: string;
-  href: string;
-}> = ({ label, href }) => <Link label={label} href={href} type={"navbar"} />;
-
-export const RepoListLink: Component<{
-  label: string;
-  href: string;
-}> = ({ label, href }) => <Link label={label} href={href} type={"repoList"} />;
+export { NavbarLink };

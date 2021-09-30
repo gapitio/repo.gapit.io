@@ -1,25 +1,25 @@
 export interface Repo {
-  href: string;
+  links: {
+    repository?: string;
+    website?: string;
+    documentation?: string;
+  };
   name?: string;
   description: string;
-  image?: string;
+  icon?: string;
+  test?: number;
 }
 
 export const repos: Repo[] = [
   {
-    href: "https://github.com/gapitio/gapit-htmlgraphics-panel",
+    links: {
+      repository: "https://github.com/gapitio/gapit-htmlgraphics-panel",
+      website: "https://gapit-htmlgraphics-panel.gapit.io/",
+    },
     name: "HTMLGraphics",
     description:
       "Grafana panel for displaying metric sensitive HTML or SVG graphics.",
-    image:
-      "https://raw.githubusercontent.com/gapitio/gapit-htmlgraphics-panel/main/src/img/logo.svg",
-  },
-  {
-    href: "https://github.com/gapitio/gapit-htmlgraphics-panel",
-    name: "HTMLGraphics",
-    description:
-      "Grafana panel for displaying metric sensitive HTML or SVG graphics.",
-    image:
-      "https://raw.githubusercontent.com/gapitio/gapit-htmlgraphics-panel/main/src/img/logo.svg",
+    icon: "https://raw.githubusercontent.com/gapitio/gapit-htmlgraphics-panel/main/src/img/logo.svg",
+    test: 4,
   },
 ];

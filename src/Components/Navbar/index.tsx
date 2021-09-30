@@ -14,10 +14,9 @@ export const Navbar: Component = () => (
         <b>Repos</b>
       </div>
       <div class={style["navbar-items-right"]}>
-        <NavbarLink
-          label="GitHub"
-          href="https://github.com/gapitio/repos.gapit.io"
-        />
+        <NavbarLink href="https://github.com/gapitio/repos.gapit.io">
+          GitHub
+        </NavbarLink>
         <ThemeSwitch />
       </div>
     </div>

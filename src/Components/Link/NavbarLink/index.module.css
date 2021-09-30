@@ -1,10 +1,13 @@
 .link {
   text-decoration: none;
-  color: #33a2e5;
-  display: inline-flex;
+  padding: 0.25rem 0.75rem;
+  color: var(--text-color);
+  display: flex;
+  font-weight: 500;
 }
 .link:hover {
-  text-decoration: underline;
+  color: #33a2e5;
+  text-decoration: none;
 }
 
 .label {
